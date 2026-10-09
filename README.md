@@ -1,59 +1,137 @@
-# Ravichandraburle
+# Ravi Burle — Professional Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.1.
+A modern professional portfolio website created for **Ravi Burle**, showcasing his experience and leadership across MES, digital manufacturing, industrial automation, and IT/OT integration.
 
-## Development server
+The portfolio presents more than 15 years of experience across global manufacturing and regulated industrial environments.
 
-To start a local development server, run:
+---
 
-```bash
+## About the Portfolio
+
+The website highlights Ravi's professional journey across:
+
+- MES & LIMS
+- IT/OT Integration
+- Digital Manufacturing
+- Industry 4.0
+- GMP & regulated manufacturing
+- Industrial automation
+- Global manufacturing systems
+- Programme & engineering leadership
+
+The portfolio includes dedicated sections for professional profile, expertise, career experience, measurable impact, resume, and contact information.
+
+---
+
+## Features
+
+- Responsive professional portfolio
+- Industrial dark-theme design
+- Mobile navigation
+- Career timeline
+- Impact and leadership highlights
+- Printable two-page resume
+- Print / Save as PDF
+- Download resume as TXT
+- Copy resume contents
+- Smooth section navigation
+- Floating back-to-top navigation
+- Responsive desktop, tablet, and mobile layouts
+- Angular client-side routing
+
+---
+
+## Technology Stack
+
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Tailwind CSS
+- Angular Router
+
+---
+
+## Pages
+
+### Home
+
+Professional introduction, executive profile, and areas of expertise.
+
+### Experience
+
+Career timeline covering Ravi's progression from industrial automation and commissioning to global manufacturing systems and digital transformation leadership.
+
+### Impact
+
+Key measurable career highlights including team leadership, major capital programmes, cost optimisation, and project delivery improvements.
+
+### Resume
+
+A structured professional resume with options to:
+
+- Print / Save as PDF
+- Download as TXT
+- Copy all resume content
+
+### Contact
+
+Professional contact area focused on MES, IT/OT, digital manufacturing, and technology leadership.
+
+---
+
+## Local Development
+
+Install dependencies:
+
+~~~bash
+npm install
+~~~
+
+Start the Angular development server:
+
+~~~bash
 ng serve
-```
+~~~
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open:
 
-## Code scaffolding
+~~~text
+http://localhost:4200
+~~~
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Production Build
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Create a production build with:
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+~~~bash
 ng build
-```
+~~~
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The compiled application is generated inside the `dist` directory.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Deployment
 
-```bash
-ng test
-```
+The application is designed for deployment on Vercel.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Author
 
-```bash
-ng e2e
-```
+**Anupama Rajendra**
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Designed and developed by Anupama Rajendra.
 
-## Additional Resources
+Portfolio content represents the professional experience of **Ravi Burle**.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## License
+
+This project is a personal professional portfolio.
+
+Portfolio content, career information, images, and personal branding are not intended for reuse without permission.
