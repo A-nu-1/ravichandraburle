@@ -6,6 +6,18 @@ The portfolio presents more than 15 years of experience across global manufactur
 
 ---
 
+## Live Portfolio
+
+🌐 [View Ravi Burle's Live Portfolio](https://ravichandraburle.vercel.app/)
+
+---
+
+## Portfolio Preview
+
+![Ravi Burle Portfolio](./ravi-home.png)
+
+---
+
 ## About the Portfolio
 
 The website highlights Ravi's professional journey across:
@@ -116,7 +128,10 @@ The compiled application is generated inside the `dist` directory.
 
 ## Deployment
 
-The application is designed for deployment on Vercel.
+The portfolio is deployed on Vercel.
+
+🌐 [ravichandraburle.vercel.app](https://ravichandraburle.vercel.app/)
+
 
 ---
 
