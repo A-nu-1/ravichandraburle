@@ -1,0 +1,138 @@
+<header
+  class="fixed inset-x-0 top-0 z-50 border-b border-teal-400/10 bg-black/70 backdrop-blur-xl"
+>
+  <nav
+    class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10"
+  >
+    <!-- Logo / Home -->
+    <a
+      routerLink="/"
+      (click)="closeMenu()"
+      class="cursor-pointer text-lg font-semibold tracking-[0.18em] text-white"
+    >
+      RAVI CHANDRA
+      <span class="text-teal-400">BURLE</span>
+    </a>
+
+    <!-- Desktop navigation -->
+    <div class="hidden items-center gap-8 md:flex">
+      <a
+        routerLink="/"
+        fragment="profile"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Profile
+      </a>
+
+      <a
+        routerLink="/"
+        fragment="expertise"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Expertise
+      </a>
+
+      <a
+        routerLink="/experience"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Experience
+      </a>
+
+      <a
+        routerLink="/impact"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Impact
+      </a>
+
+      <a
+        routerLink="/resume"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Resume
+      </a>
+
+      <a
+        routerLink="/contact"
+        class="cursor-pointer text-sm text-zinc-400 transition-colors hover:text-teal-300"
+      >
+        Contact
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      type="button"
+      class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border border-teal-400/15 text-white transition hover:border-teal-400/40 hover:text-teal-300 md:hidden"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation menu"
+    >
+      @if (!menuOpen) {
+        <span class="text-2xl leading-none">☰</span>
+      } @else {
+        <span class="text-2xl leading-none">×</span>
+      }
+    </button>
+  </nav>
+
+  <!-- Mobile navigation -->
+  @if (menuOpen) {
+    <div
+      class="border-t border-teal-400/10 bg-black/95 px-6 py-5 backdrop-blur-xl md:hidden"
+    >
+      <div class="mx-auto flex max-w-7xl flex-col gap-1">
+        <a
+          routerLink="/"
+          fragment="profile"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Profile
+        </a>
+
+        <a
+          routerLink="/"
+          fragment="expertise"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Expertise
+        </a>
+
+        <a
+          routerLink="/experience"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Experience
+        </a>
+
+        <a
+          routerLink="/impact"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Impact
+        </a>
+
+        <a
+          routerLink="/resume"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Resume
+        </a>
+
+        <a
+          routerLink="/contact"
+          (click)="closeMenu()"
+          class="rounded-lg px-4 py-3 text-sm text-zinc-300 transition hover:bg-teal-400/5 hover:text-teal-300"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  }
+</header>

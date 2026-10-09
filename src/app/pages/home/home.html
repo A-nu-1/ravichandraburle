@@ -1,0 +1,16 @@
+<app-hero />
+
+<app-profile />
+
+<app-expertise />
+@if (showBackToTop) {
+  <button
+    type="button"
+    (click)="scrollToTop()"
+    aria-label="Back to top"
+    title="Back to top"
+    class="fixed bottom-6 right-6 z-40 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-teal-400/30 bg-black/80 text-xl text-teal-300 shadow-lg shadow-black/30 backdrop-blur-md transition hover:-translate-y-1 hover:border-teal-300 hover:bg-teal-400 hover:text-black"
+  >
+    ↑
+  </button>
+}

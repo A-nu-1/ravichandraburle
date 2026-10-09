@@ -1,0 +1,345 @@
+<main class="resume-page min-h-screen pt-20">
+  <section class="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+
+    <!-- Screen heading + actions -->
+    <div class="resume-toolbar">
+      <div>
+        <p class="text-sm font-medium uppercase tracking-[0.3em] text-teal-400">
+          Resume
+        </p>
+
+        <h1 class="mt-3 text-4xl font-semibold tracking-tight text-white md:text-5xl">
+          Professional Profile
+        </h1>
+
+        <p class="mt-4 max-w-2xl leading-7 text-zinc-400">
+          View, copy, download or save Ravi's professional resume as PDF.
+        </p>
+      </div>
+
+      <div class="resume-actions">
+        <button type="button" (click)="printResume()">
+          Print / Save PDF
+        </button>
+
+        <button type="button" (click)="downloadTxt()">
+          Download TXT
+        </button>
+
+        <button type="button" (click)="copyAll()">
+          {{ copied ? '✓ Copied' : 'Copy All' }}
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Printable resume -->
+    <article class="resume-document">
+
+      <!-- Header -->
+      <header class="resume-header">
+        <div>
+          <h2>Ravi Burle</h2>
+
+          <p class="resume-title">
+            MES Business Systems Leader
+          </p>
+
+          <p class="resume-subtitle">
+            IT/OT Manufacturing Integration · Global Template &amp; Change Governance
+          </p>
+        </div>
+
+        <div class="header-keywords">
+          <span>MES</span>
+          <span>LIMS</span>
+          <span>IT/OT</span>
+          <span>Industry 4.0</span>
+          <span>GMP</span>
+        </div>
+      </header>
+
+
+      <!-- Profile -->
+      <section class="resume-section">
+        <h3>Executive Profile</h3>
+
+        <p>
+          Manufacturing systems leader with 15+ years of experience across
+          MES, LIMS, shopfloor systems, industrial automation and IT/OT
+          integration in global, multi-site and GMP-regulated environments.
+          Experienced in MES capability business ownership, global template
+          governance, change control, validation strategy, system integrator
+          management, site leadership and stakeholder alignment.
+        </p>
+
+        <p>
+          Strong focus on audit readiness, data integrity, patient safety,
+          digital manufacturing and continuous improvement.
+        </p>
+      </section>
+
+
+      <!-- Core competencies -->
+      <section class="resume-section">
+        <h3>Core Competencies</h3>
+
+        <div class="competency-grid">
+          <span>MES Business Ownership</span>
+          <span>Global Template Governance</span>
+          <span>MES / LIMS Lifecycle</span>
+          <span>Change Governance</span>
+          <span>CSV &amp; Data Integrity</span>
+          <span>Regulated Validation</span>
+          <span>System Integrator Management</span>
+          <span>Vendor Programme Management</span>
+          <span>IT / OT Integration</span>
+          <span>Multi-Site Deployment</span>
+          <span>GMP Manufacturing</span>
+          <span>Digital Manufacturing</span>
+        </div>
+      </section>
+
+
+      <!-- Experience -->
+      <section class="resume-section">
+        <h3>Professional Experience</h3>
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Senior Manager IT-Production Systems</h4>
+              <p>BIOTRONIK / Teleflex</p>
+            </div>
+
+            <time>Feb 2025 – Present</time>
+          </div>
+
+          <ul>
+            <li>
+              Owns MES, LIMS and shopfloor systems across manufacturing
+              sites in Bülach, Switzerland and Warnemünde, Germany.
+            </li>
+            <li>
+              Leads migration and replatforming activities.
+            </li>
+            <li>
+              Coordinates system integrator project managers, site leads
+              and SMEs.
+            </li>
+            <li>
+              Supports o9 Advanced Planning integration with MES.
+            </li>
+            <li>
+              Drives lifecycle management, change governance, GMP and
+              CSV activities.
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Senior Manager IT-OT Digital Solutions</h4>
+              <p>SKAN AG</p>
+            </div>
+
+            <time>Nov 2023 – Nov 2024</time>
+          </div>
+
+          <ul>
+            <li>
+              Developed digital and equipment technology roadmaps aligned
+              with Industry 4.0 and GMP environments.
+            </li>
+            <li>
+              Worked with pharma isolator controls, automation and
+              connected manufacturing technologies.
+            </li>
+            <li>Developed reusable technology templates.</li>
+            <li>
+              Supported pilots, implementation, go-live and hypercare.
+            </li>
+            <li>Participated in global architecture workshops.</li>
+          </ul>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Projects Engineering Manager OT</h4>
+              <p>DSM-Firmenich</p>
+            </div>
+
+            <time>Apr 2020 – Oct 2023</time>
+          </div>
+
+          <ul>
+            <li>Led a team of 15 automation engineers.</li>
+            <li>
+              Harmonised MES, DCS and OSI PI across EMEA life-sciences sites.
+            </li>
+            <li>
+              Supported MES integration with advanced planning and
+              demand planning.
+            </li>
+            <li>
+              Worked on capital programmes valued above €10 million each.
+            </li>
+            <li>
+              Led validation, deployment, go-live and hypercare activities.
+            </li>
+            <li>
+              Delivered initiatives contributing approximately 15% cost savings.
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Project Manager Automation</h4>
+              <p>Brugg AG · Contract</p>
+            </div>
+
+            <time>Apr 2018 – Mar 2020</time>
+          </div>
+
+          <p>
+            Project management and delivery within industrial automation
+            and manufacturing environments.
+          </p>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Project Engineer Grid Automation</h4>
+              <p>Landis+Gyr</p>
+            </div>
+
+            <time>Jun 2016 – Mar 2018</time>
+          </div>
+
+          <p>
+            Engineering and project delivery within grid automation and
+            industrial control systems.
+          </p>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>E&amp;IC Manager — Power Plants</h4>
+              <p>Alstom / GE</p>
+            </div>
+
+            <time>Sep 2012 – Apr 2016</time>
+          </div>
+
+          <p>
+            Engineering and leadership responsibilities across electrical,
+            instrumentation and control systems within power-generation
+            projects.
+          </p>
+        </div>
+
+
+        <div class="resume-role">
+          <div class="role-heading">
+            <div>
+              <h4>Commissioning Lead Engineer</h4>
+              <p>Alstom</p>
+            </div>
+
+            <time>May 2007 – Jul 2012</time>
+          </div>
+
+          <ul>
+            <li>Worked with DCS, PLC, SCADA and safety-control systems.</li>
+            <li>Led commissioning activities in industrial environments.</li>
+            <li>
+              Standardised engineering and commissioning protocols,
+              contributing to approximately 20% shorter project timelines.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- Education + Certifications -->
+      <div class="resume-two-column">
+
+        <section class="resume-section">
+          <h3>Education</h3>
+
+          <div class="compact-item">
+            <h4>MSc Mechatronics</h4>
+            <p>University of Siegen, Germany</p>
+            <span>2004 – 2007</span>
+          </div>
+
+          <div class="compact-item">
+            <h4>Bachelor of Engineering</h4>
+            <p>Acharya Nagarjuna University, India</p>
+            <span>1998 – 2002 · Distinction</span>
+          </div>
+        </section>
+
+
+        <section class="resume-section">
+          <h3>Certifications &amp; Training</h3>
+
+          <ul>
+            <li>PMI Project Management Professional (PMP)</li>
+            <li>IREB Requirements Management</li>
+            <li>SAP HANA Basics</li>
+            <li>GICSP — ICS / OT Cybersecurity Training Certificate</li>
+          </ul>
+        </section>
+
+      </div>
+
+
+      <!-- Technical -->
+      <section class="resume-section">
+        <h3>Technical &amp; Leadership Expertise</h3>
+
+        <div class="competency-grid">
+          <span>MES / LIMS Ownership</span>
+          <span>System Integrator Management</span>
+          <span>Vendor Management</span>
+          <span>CSV / Data Integrity</span>
+          <span>Audit Readiness</span>
+          <span>MES / SCADA / PLC / APS</span>
+          <span>SAP S/4HANA Integration</span>
+          <span>MQTT / PAC</span>
+          <span>ISA-95</span>
+          <span>Team Leadership</span>
+          <span>EMEA Rollouts</span>
+          <span>Multi-Site Manufacturing</span>
+        </div>
+      </section>
+
+
+      <!-- Languages -->
+      <section class="resume-section">
+        <h3>Languages</h3>
+
+        <div class="language-grid">
+          <p><strong>English</strong><span>Fluent</span></p>
+          <p><strong>German</strong><span>Very Good</span></p>
+          <p><strong>Hindi</strong><span>Fluent</span></p>
+          <p><strong>Telugu</strong><span>Fluent</span></p>
+          <p><strong>Kannada</strong><span>Good</span></p>
+        </div>
+      </section>
+
+    </article>
+  </section>
+</main>

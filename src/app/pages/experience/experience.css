@@ -1,0 +1,548 @@
+/* =========================================================
+   PAGE TAGS
+   ========================================================= */
+
+.experience-tag {
+  border: 1px solid rgba(45, 212, 191, 0.18);
+  border-radius: 9999px;
+  background: rgba(45, 212, 191, 0.04);
+  padding: 0.45rem 0.85rem;
+
+  color: rgb(153, 246, 228);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.timeline {
+  position: relative;
+  padding-top: 2rem;
+}
+
+/* Central vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(45, 212, 191, 0.55) 5%,
+    rgba(45, 212, 191, 0.22) 90%,
+    transparent
+  );
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   TIMELINE ITEM
+   ========================================================= */
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+  margin-bottom: 5rem;
+
+  opacity: 0;
+
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Left cards begin slightly left */
+.timeline-left {
+  transform: translateX(-45px);
+}
+
+/* Right cards begin slightly right */
+.timeline-right {
+  transform: translateX(45px);
+}
+
+
+/* IntersectionObserver adds this */
+.timeline-item.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* =========================================================
+   CARD POSITIONING
+   ========================================================= */
+
+.timeline-left .timeline-card {
+  grid-column: 1;
+
+  margin-right: 3.5rem;
+}
+
+.timeline-right .timeline-card {
+  grid-column: 2;
+
+  margin-left: 3.5rem;
+}
+
+
+/* =========================================================
+   CENTRE DOT
+   ========================================================= */
+
+.timeline-dot {
+  position: absolute;
+
+  top: 2.25rem;
+  left: 50%;
+
+  z-index: 10;
+
+  width: 15px;
+  height: 15px;
+
+  border: 3px solid #030909;
+  border-radius: 9999px;
+
+  background: rgb(45, 212, 191);
+
+  box-shadow:
+    0 0 0 4px rgba(45, 212, 191, 0.08),
+    0 0 24px rgba(45, 212, 191, 0.45);
+
+  transform: translateX(-50%);
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD
+   ========================================================= */
+
+.timeline-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.012)
+    );
+
+  padding: 1.75rem;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+
+  transition:
+    border-color 250ms ease,
+    transform 250ms ease,
+    box-shadow 250ms ease;
+}
+
+
+/* subtle industrial top accent */
+.timeline-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(45, 212, 191, 0.5),
+    transparent
+  );
+
+  opacity: 0.5;
+}
+
+
+.timeline-card:hover {
+  border-color: rgba(45, 212, 191, 0.22);
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.28),
+    0 0 40px rgba(20, 184, 166, 0.035);
+}
+
+
+/* =========================================================
+   CARD TYPOGRAPHY
+   ========================================================= */
+
+.timeline-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 1.25rem;
+}
+
+
+.timeline-number {
+  color: rgba(45, 212, 191, 0.55);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+}
+
+
+.timeline-date {
+  color: rgb(94, 234, 212);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
+}
+
+
+.timeline-company {
+  color: rgb(45, 212, 191);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+
+.timeline-title {
+  margin-top: 0.55rem;
+
+  color: white;
+
+  font-size: 1.35rem;
+  font-weight: 600;
+
+  line-height: 1.35;
+}
+
+
+.timeline-summary {
+  margin-top: 1rem;
+
+  color: rgb(161, 161, 170);
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.timeline-details {
+  display: grid;
+
+  gap: 0.75rem;
+
+  margin-top: 1.35rem;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.timeline-details li {
+  position: relative;
+
+  padding-left: 1.2rem;
+
+  color: rgb(161, 161, 170);
+
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+
+.timeline-details li::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0.65rem;
+  left: 0;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 9999px;
+
+  background: rgba(45, 212, 191, 0.75);
+
+  box-shadow: 0 0 8px rgba(45, 212, 191, 0.35);
+}
+
+
+/* =========================================================
+   SKILL CHIPS
+   ========================================================= */
+
+.timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.timeline-skills span {
+  border: 1px solid rgba(45, 212, 191, 0.12);
+  border-radius: 9999px;
+
+  background: rgba(45, 212, 191, 0.035);
+
+  padding: 0.3rem 0.65rem;
+
+  color: rgb(153, 246, 228);
+
+  font-size: 0.68rem;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* Move timeline from centre to left */
+  .timeline::before {
+    left: 7px;
+
+    transform: none;
+  }
+
+
+  .timeline-item {
+    display: block;
+
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+  }
+
+
+  /* On mobile everything reveals from the right */
+  .timeline-left,
+  .timeline-right {
+    transform: translateX(30px);
+  }
+
+
+  .timeline-item.is-visible {
+    transform: translateX(0);
+  }
+
+
+  .timeline-left .timeline-card,
+  .timeline-right .timeline-card {
+    margin: 0;
+  }
+
+
+  .timeline-dot {
+    top: 2rem;
+    left: 7px;
+
+    transform: translateX(-50%);
+  }
+
+
+  .timeline-card {
+    padding: 1.35rem;
+  }
+
+
+  .timeline-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 0.4rem;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   Respect users who disable animations
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item {
+    opacity: 1;
+    transform: none;
+
+    transition: none;
+  }
+
+  .timeline-card {
+    transition: none;
+  }
+}
+/* =========================================================
+   EXPERIENCE INTRO
+   ========================================================= */
+
+.experience-intro {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .experience-intro {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 0;
+  }
+
+  /* Keep the words ABOVE the image */
+  .experience-intro > div:first-child {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
+/* =========================================================
+   INDUSTRIAL VISUAL
+   ========================================================= */
+
+.industrial-visual {
+  position: relative;
+
+  min-height: 480px;
+
+  background: transparent;
+
+  box-shadow: none;
+}
+
+
+/* Desktop — image actually travels underneath the text */
+@media (min-width: 1024px) {
+  .industrial-visual {
+    width: 135%;
+
+    /* pull the entire image into the text side */
+    margin-left: -35%;
+  }
+}
+
+
+.industrial-visual img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  /*
+    Keep most of the image visible.
+    Only the far-left edge dissolves into the page.
+  */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.18) 5%,
+    rgba(0, 0, 0, 0.7) 15%,
+    black 28%,
+    black 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.18) 5%,
+    rgba(0, 0, 0, 0.7) 15%,
+    black 28%,
+    black 100%
+  );
+}
+
+
+/*
+  Additional darkening where the image passes underneath
+  Ravi's text. This keeps the words perfectly readable.
+*/
+.industrial-visual-overlay {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    to right,
+    rgba(3, 9, 9, 0.75) 0%,
+    rgba(3, 9, 9, 0.35) 20%,
+    transparent 45%
+  );
+}
+
+
+/* Mobile */
+@media (max-width: 1023px) {
+  .industrial-visual {
+    min-height: 320px;
+  }
+
+  .industrial-visual img {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 100%
+    );
+
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 15%,
+      black 100%
+    );
+  }
+
+  .industrial-visual-overlay {
+    display: none;
+  }
+}

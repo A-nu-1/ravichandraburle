@@ -1,0 +1,612 @@
+/* =========================================================
+   SCREEN
+   ========================================================= */
+
+.resume-page {
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(20, 184, 166, 0.06),
+      transparent 30%
+    );
+}
+
+
+/* Toolbar */
+
+.resume-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.resume-actions button {
+  cursor: pointer;
+
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  border-radius: 0.65rem;
+
+  background: rgba(20, 184, 166, 0.06);
+
+  padding: 0.7rem 1rem;
+
+  color: rgb(153, 246, 228);
+
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  transition:
+    background 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+.resume-actions button:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(45, 212, 191, 0.55);
+
+  background: rgba(20, 184, 166, 0.12);
+}
+
+
+/* Document */
+
+.resume-document {
+  overflow: hidden;
+
+  border: 1px solid rgba(45, 212, 191, 0.12);
+  border-radius: 1rem;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(24, 24, 27, 0.96),
+      rgba(9, 9, 11, 0.98)
+    );
+
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.3);
+
+  padding: clamp(2rem, 5vw, 4rem);
+
+  color: rgb(212, 212, 216);
+}
+
+
+/* Header */
+
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+
+  padding-bottom: 2rem;
+
+  border-bottom: 1px solid rgba(45, 212, 191, 0.18);
+}
+
+.resume-header h2 {
+  color: white;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+.resume-title {
+  margin-top: 1.25rem;
+
+  color: rgb(94, 234, 212);
+
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.resume-subtitle {
+  margin-top: 0.4rem;
+
+  color: rgb(161, 161, 170);
+
+  font-size: 0.95rem;
+}
+
+.header-keywords {
+  display: flex;
+  max-width: 260px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.header-keywords span,
+.competency-grid span {
+  border: 1px solid rgba(45, 212, 191, 0.16);
+  border-radius: 999px;
+
+  background: rgba(20, 184, 166, 0.05);
+
+  padding: 0.4rem 0.7rem;
+
+  color: rgb(153, 246, 228);
+
+  font-size: 0.75rem;
+}
+
+
+/* Sections */
+
+.resume-section {
+  padding-top: 2.5rem;
+}
+
+.resume-section > h3 {
+  margin-bottom: 1.5rem;
+
+  color: rgb(94, 234, 212);
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.resume-section > h3::after {
+  content: "";
+
+  display: block;
+
+  width: 2.5rem;
+  height: 1px;
+
+  margin-top: 0.65rem;
+
+  background: rgba(45, 212, 191, 0.6);
+}
+
+.resume-section > p {
+  max-width: 900px;
+
+  margin-top: 0.8rem;
+
+  color: rgb(161, 161, 170);
+
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+
+/* Competencies */
+
+.competency-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+
+/* Roles */
+
+.resume-role {
+  padding: 1.7rem 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.resume-role:last-child {
+  border-bottom: 0;
+}
+
+.role-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.role-heading h4 {
+  color: white;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.role-heading p {
+  margin-top: 0.25rem;
+
+  color: rgb(94, 234, 212);
+
+  font-size: 0.88rem;
+}
+
+.role-heading time {
+  flex-shrink: 0;
+
+  color: rgb(113, 113, 122);
+
+  font-size: 0.8rem;
+}
+
+.resume-role > p,
+.resume-role li {
+  color: rgb(161, 161, 170);
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.resume-role > p {
+  margin-top: 1rem;
+}
+
+.resume-role ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+
+  list-style: disc;
+}
+
+.resume-role li + li {
+  margin-top: 0.35rem;
+}
+
+.resume-role li::marker {
+  color: rgb(45, 212, 191);
+}
+
+
+/* Education + certifications */
+
+.resume-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.compact-item + .compact-item {
+  margin-top: 1.5rem;
+}
+
+.compact-item h4 {
+  color: white;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.compact-item p,
+.compact-item span,
+.resume-section > ul li {
+  color: rgb(161, 161, 170);
+
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.compact-item p {
+  margin-top: 0.2rem;
+}
+
+.compact-item span {
+  display: block;
+  margin-top: 0.1rem;
+}
+
+.resume-section > ul {
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.resume-section > ul li::marker {
+  color: rgb(45, 212, 191);
+}
+
+
+/* Languages */
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+}
+
+.language-grid p {
+  border-left: 1px solid rgba(45, 212, 191, 0.25);
+
+  padding-left: 0.8rem;
+}
+
+.language-grid strong,
+.language-grid span {
+  display: block;
+}
+
+.language-grid strong {
+  color: white;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.language-grid span {
+  margin-top: 0.2rem;
+
+  color: rgb(113, 113, 122);
+
+  font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .resume-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .resume-actions {
+    justify-content: flex-start;
+  }
+
+  .resume-header {
+    flex-direction: column;
+  }
+
+  .header-keywords {
+    max-width: none;
+    justify-content: flex-start;
+  }
+
+  .resume-two-column {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .language-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .resume-actions {
+    width: 100%;
+  }
+
+  .resume-actions button {
+    flex: 1 1 calc(50% - 0.5rem);
+  }
+
+  .role-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* =========================================================
+   PRINT / SAVE AS PDF
+   ========================================================= */
+
+@media print {
+
+ @page {
+  size: A4;
+  margin: 10mm 12mm;
+}
+
+  /*
+   * Hide everything except the resume.
+   * Navbar is outside this component, so this removes the
+   * portfolio UI from the generated PDF.
+   */
+  body * {
+    visibility: hidden;
+  }
+
+  .resume-document,
+  .resume-document * {
+    visibility: visible;
+  }
+
+  .resume-document {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    overflow: visible;
+
+    border: 0;
+    border-radius: 0;
+
+    background: white;
+
+    box-shadow: none;
+
+    padding: 0;
+
+    color: #222;
+  }
+
+
+  /* Header */
+
+  .resume-header {
+    gap: 20px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #bbb;
+  }
+
+  .resume-header h2 {
+    color: #111;
+
+    font-size: 28pt;
+  }
+
+  .resume-title {
+    margin-top: 8px;
+
+    color: #111;
+
+    font-size: 11pt;
+  }
+
+  .resume-subtitle {
+    color: #555;
+
+    font-size: 9pt;
+  }
+
+  .header-keywords {
+    max-width: 210px;
+  }
+
+  .header-keywords span,
+  .competency-grid span {
+    border: 1px solid #bbb;
+
+    background: transparent;
+
+    padding: 3px 6px;
+
+    color: #333;
+
+    font-size: 7.5pt;
+  }
+
+
+  /* Sections */
+
+  .resume-section {
+    padding-top: 12px;
+  }
+
+  .resume-section > h3 {
+    margin-bottom: 6px;
+
+    color: #111;
+
+    font-size: 9pt;
+  }
+
+  .resume-section > h3::after {
+    background: #555;
+  }
+
+  .resume-section > p,
+  .resume-role > p,
+  .resume-role li,
+  .compact-item p,
+  .compact-item span,
+  .resume-section > ul li {
+    color: #333;
+
+    font-size: 8.5pt;
+    line-height: 1.45;
+  }
+
+
+  /* Roles */
+
+  .resume-role {
+    padding: 8px 0;
+
+    border-bottom: 1px solid #ddd;
+
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .role-heading h4 {
+    color: #111;
+
+    font-size: 9.5pt;
+  }
+
+  .role-heading p {
+    color: #333;
+
+    font-size: 8.5pt;
+  }
+
+  .role-heading time {
+    color: #555;
+
+    font-size: 8pt;
+  }
+
+  .resume-role ul {
+    margin-top: 6px;
+  }
+
+  .resume-role li + li {
+    margin-top: 2px;
+  }
+
+  .resume-role li::marker,
+  .resume-section > ul li::marker {
+    color: #333;
+  }
+
+
+  /* Education */
+
+  .resume-two-column {
+    gap: 30px;
+
+    break-inside: avoid;
+  }
+
+  .compact-item h4 {
+    color: #111;
+
+    font-size: 9pt;
+  }
+
+
+  /* Languages */
+
+  .language-grid {
+    gap: 8px;
+  }
+
+  .language-grid p {
+    border-left: 1px solid #aaa;
+  }
+
+  .language-grid strong {
+    color: #111;
+
+    font-size: 8pt;
+  }
+
+  .language-grid span {
+    color: #555;
+
+    font-size: 7.5pt;
+  }
+
+}
